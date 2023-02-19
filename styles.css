@@ -1,0 +1,111 @@
+.heading{
+    background-color: #FAAB78;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Edu SA Beginner';
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;    
+}
+.content{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+.footer{
+    background-color: #FAAB78;
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+    height: auto;
+}
+.footText{
+    text-align: right;
+    font-size: 20px;
+    font-family: 'Edu SA Beginner';
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: "Edu SA Beginner";
+    margin-right: 20px;
+}
+#box1{
+    grid-area: box11;  
+    padding-top: 20px; 
+}
+#box2{
+    grid-area: box22;
+    padding-top: 20px; 
+}
+#box3{
+    grid-area: box33;
+    padding-top: 20px; 
+}
+#box4{
+    grid-area: box44;
+    padding-top: 20px; 
+}
+#box5{
+    grid-area: box55;
+    padding-top: 20px; 
+}
+#box6{
+    grid-area: box66;
+    padding-top: 20px; 
+}
+.maingrid{
+    
+    display: grid;
+    grid-template-areas: "box11 box11 box11 box22 box22 box22"
+    "box33 box33 box33 box44 box44 box44"
+    "box55 box55 box55 box66 box66 box66";
+    margin-left: 15px;   
+}
+body{
+    font-size: larger;
+    font-family: 'Exo 2', sans-serif;
+    margin: 0px;        
+}
+.bg {
+    background-color: #FEFBE9;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow-y: scroll;
+  }
+.image{
+    height: 350px;
+    width: 440px;
+    justify-content: center;
+    border-radius: 10px;
+    display: flex;
+}
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.4);
+    color: #f1f1f1; 
+    width: 400px;
+    transition: .5s ease-in-out;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align:center;
+}
+.container{
+    position: relative;
+    height: 350px;
+    width: 440px;
+    margin-left: 180px;
+    justify-content: center;
+}
+.container:hover .overlay {
+    opacity: .8; 
+}  
